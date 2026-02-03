@@ -1,0 +1,10 @@
+name: Developer_Branch_CI
+on:
+ push:
+  tags:
+    - "v*"
+jobs:
+ check-bat-version:
+   runs-on: self-hosted
+   steps:
+    - run: env
