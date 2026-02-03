@@ -4,10 +4,25 @@ on:
   branches:
    - 'XPNS-*'
 jobs:
- check-bat-version:
+  CI_Steps:
    runs-on: self-hosted
    steps:
      - name: Checkout
        uses: actions/checkout@v4
-     - run: ls
-     - run: tail index.js
+
+     - name: Unit Tests
+       run: echo Running Unit Tests
+
+     - name: Integration Tests
+       run: echo Running Integration Tests
+
+     - name: SAST Scans
+       run: echo Running SAST Scans
+
+     - name: Detect Secrets in source code
+       run: echo Detecting Secrets in source code
+
+     - name: Code Quality
+       run: echo Code Quality
+
+
