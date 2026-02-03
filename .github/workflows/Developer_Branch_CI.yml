@@ -2,7 +2,7 @@ name: Developer_Branch_CI
 on:
  push:
   branches:
-  - 'XPNS-*'
+   - 'XPNS-*'
 jobs:
  check-bat-version:
    runs-on: self-hosted
