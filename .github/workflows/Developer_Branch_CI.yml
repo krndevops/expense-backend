@@ -2,9 +2,10 @@ name: Developer_Branch_CI
 on:
  push:
   branches:
-  - 'XPNS-*'
+   - 'XPNS-*'
 jobs:
  check-bat-version:
    runs-on: self-hosted
    steps:
-    - run: env
+     - run: ls
+     - run: tail index.js
