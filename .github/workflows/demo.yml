@@ -1,0 +1,5 @@
+name: Caller Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    uses: krndevops/github-actions/.github/workflows/sample.yml@main
