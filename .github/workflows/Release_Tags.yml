@@ -1,4 +1,4 @@
-name: Developer_Branch_CI
+name: Release_Tags
 on:
  push:
   tags:
@@ -8,7 +8,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: SAST Scans
         run: echo Running SAST Scans
