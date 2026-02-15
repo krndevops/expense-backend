@@ -10,3 +10,5 @@ env:
 jobs:
   CI_Steps:
     uses: krndevops/github-actions/.github/workflows/Developer_Pull_Request.yml@main
+    with:
+      service_name: expense-backend

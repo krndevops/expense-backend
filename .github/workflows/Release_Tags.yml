@@ -10,4 +10,6 @@ env:
 jobs:
   CI_Steps:
     uses: krndevops/github-actions/.github/workflows/Release_Tags.yml@main
+    with:
+      service_name: expense-backend
 
