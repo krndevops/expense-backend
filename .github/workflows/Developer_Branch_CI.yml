@@ -13,4 +13,3 @@ jobs:
     secrets: inherit
     with:
       service_name: expense-backend
-
